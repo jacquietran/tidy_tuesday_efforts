@@ -34,3 +34,5 @@ Stack Overflow:
 STHDA, [ggplot2 themes and background colors: The 3 elements](http://www.sthda.com/english/wiki/ggplot2-themes-and-background-colors-the-3-elements#remove-plot-panel-borders-and-grid-lines)
 
 Will Chase, [Custom fonts and plot quality with ggplot on Windows](https://www.williamrchase.com/post/custom-fonts-and-plot-quality-with-ggplot-on-windows/)
+
+rOpenSci, [{magick} vignette, for v1.4](https://ropensci.org/tutorials/magick_tutorial/)
