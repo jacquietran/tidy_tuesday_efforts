@@ -12,6 +12,7 @@ library(tidyr)
 library(textdata)
 library(patchwork)
 library(paletteer)
+library(magick)
 
 # Import the data --------------------------------------------------------------
 
@@ -101,6 +102,7 @@ plot_features <- list(
       size = 9),
     plot.title = element_markdown(size = NULL),
     plot.subtitle = element_markdown(size = NULL),
+    plot.caption = element_markdown(size = NULL),
     panel.spacing = unit(1, "lines"),
     panel.grid.minor = element_blank(),
     plot.background = element_rect(
@@ -160,8 +162,12 @@ p <- p + scale_x_continuous(
   expand = c(0,0))
 p <- p + labs(
   subtitle = "From **high-scoring** user reviews (>= 7 out of 10)",
-  x = NULL, y = "\nSentiment value * # of occurrences")
+  x = NULL, y = "\nSentiment value * # of occurrences\n",
+  caption = "**Image credit:** Ijen-Ekusas on DeviantArt")
 plot_high_grades_negation <- p
+
+# Image source:
+# https://www.deviantart.com/ijen-ekusas/art/Animal-Crossing-Celeste-656730811
 
 # Patch plots together ---------------------------------------------------------
 
@@ -174,3 +180,24 @@ ggsave(
   device = "png",
   type = "cairo",
   width = 18, height = 12, units = "cm", dpi = 300)
+
+# Add image to plot ------------------------------------------------------------
+
+# Load image file of quilted plots
+image_read(here("2020-05-05/quilted_plots.png")
+           ) -> plot_base
+
+# Load image of Celeste
+image_read(here("2020-05-05/celeste.png")) %>%
+  image_scale("250"
+              ) -> celeste_still
+
+# Combine images
+composite <- image_composite(
+  plot_base, celeste_still, offset = "+35+1140")
+
+# Export composite image to PNG
+image_write(
+  composite,
+  here("2020-05-05/composite.png"),
+  "png")
