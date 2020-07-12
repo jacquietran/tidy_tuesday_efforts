@@ -19,3 +19,7 @@ The `showtext` package: https://github.com/yixuan/showtext
 Emil Hvitfeldt, [[Comprehensive list of color palettes available in R](https://github.com/EmilHvitfeldt/r-color-palettes)
 
 Datanovia, [How to change ggplot facet labels](https://www.datanovia.com/en/blog/how-to-change-ggplot-facet-labels/)
+
+The R Graph Gallery, [Custom lollipop chart](https://www.r-graph-gallery.com/301-custom-lollipop-chart.html)
+
+`ggplot2` reference manual: [Points](https://ggplot2.tidyverse.org/reference/geom_point.html)
