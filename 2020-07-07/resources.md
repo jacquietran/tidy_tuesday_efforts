@@ -12,8 +12,10 @@ Dr Simon Jackson, [Exploring correlations in R with corrr](https://drsimonj.svbt
 
 The `caret` package: [Variable importance](https://topepo.github.io/caret/variable-importance.html)
 
-## Visualisations
+## Plotting
 
 The `showtext` package: https://github.com/yixuan/showtext
 
 Emil Hvitfeldt, [[Comprehensive list of color palettes available in R](https://github.com/EmilHvitfeldt/r-color-palettes)
+
+Datanovia, [How to change ggplot facet labels](https://www.datanovia.com/en/blog/how-to-change-ggplot-facet-labels/)
