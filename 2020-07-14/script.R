@@ -6,8 +6,7 @@ library(paletteer)
 library(showtext)
 # Load font
 font_add_google("Dosis", "dosis")
-font_add_google("Electrolize", "electrolize")
-font_add_google("Quicksand", "quicksand")
+font_add_google("Bungee Hairline", "bungeehairline")
 showtext_auto()
 library(ggplot2)
 library(glue)
@@ -107,14 +106,14 @@ plot_features <- list(
   theme(
     plot.background = element_rect(fill = "#000F0F"),
     text = element_text(
-      size = 32, colour = paletteer_d("wesanderson::Royal1")[3],
+      size = 32, colour = paletteer_d("wesanderson::Chevalier1")[3],
       family = "dosis"),
     legend.position = "none",
     axis.title = element_blank(),
     panel.grid = element_blank(),
     axis.text.x = element_blank(),
     axis.text.y = element_text(
-      colour = paletteer_d("wesanderson::Royal1")[3],
+      colour = paletteer_d("wesanderson::Chevalier1")[3],
       family = "dosis"))
 )
 
@@ -154,6 +153,11 @@ p <- p + geom_text(
 p <- p + scale_colour_manual(
   values = c("male" = "#000F0F",
              "female" = paletteer_d("wesanderson::Royal2")[5]))
+p <- p + annotate(
+  geom = "text", x = 350, y = "1970-1979",
+  family = "bungeehairline", size = , fontface = "bold",
+  colour = paletteer_d("wesanderson::Chevalier1")[3],
+  label = "In the 1960s, 70s, and 80s,\nonly a few astronauts who\ntravelled to space were women.")
 
 # Export to PNG
 ggsave(
