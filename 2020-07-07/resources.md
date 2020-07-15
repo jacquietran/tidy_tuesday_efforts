@@ -16,7 +16,7 @@ The `caret` package: [Variable importance](https://topepo.github.io/caret/variab
 
 The `showtext` package: https://github.com/yixuan/showtext
 
-Emil Hvitfeldt, [[Comprehensive list of color palettes available in R](https://github.com/EmilHvitfeldt/r-color-palettes)
+Emil Hvitfeldt, [Comprehensive list of color palettes available in R](https://github.com/EmilHvitfeldt/r-color-palettes)
 
 Datanovia, [How to change ggplot facet labels](https://www.datanovia.com/en/blog/how-to-change-ggplot-facet-labels/)
 
