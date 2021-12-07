@@ -91,11 +91,11 @@ volans <- image_read(here::here("2021-12-07/volans_framed_rotated.png"))
 plot_with_web <- image_mosaic(c(maratus, cobweb))
 # Add spider polaroid
 plot_with_web_and_spider <- image_composite(
-  plot_with_web, volans, offset = "+1255+220")
+  plot_with_web, volans, offset = "+1305+270")
 
 # Export composite image
 image_write(
   plot_with_web_and_spider,
   path = here::here("2021-12-07/plot_composite.png"),
-  format = "png")
+  quality = 100, format = "png")
 
