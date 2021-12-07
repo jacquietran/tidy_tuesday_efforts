@@ -26,7 +26,7 @@ salticidae_top_10_genera <- spiders %>%
 
 # Create annotation
 maratus_annotation <- stringr::str_wrap(
-  "Spiders of the Maratus genus are more commonly referred to as peacock spiders. This name arises from the usually iridiscent colouring of males' abdomens. Females are not as colourful as they are 'cryptic' in appearance.",
+  "Spiders of the Maratus genus are more commonly referred to as peacock spiders. This name arises from the usually iridescent colouring of males' abdomens. Females are not as colourful as they are 'cryptic' in appearance.",
   width = 40)
 
 # Build plot -------------------------------------------------------------------
